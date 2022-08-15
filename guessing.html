@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script type="text/javascript" src="js/guessing.js"></script>
+        <title>Guessing Game</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Inputs</legend>
+                <p>Range 1-100</p>
+                <label for="guess">Your Guess:</label>
+                <input type="text" id="guess" value="" />
+                <input type="button" onclick="your_guess()" value="submit" /><br />
+                <input type="button" onclick="gen_new_num(true)" value="New Game" /><br />
+                <input id="cheat" type="checkbox" value="cheat" onclick="show_answer()" />
+                <label for="cheat">Cheat</label>
+                <div id="cheating" style="display: none;">
+                 <input id="actuaul_answer" type="text" />
+                 <label for="actuaul_answer">Number to guess</label>
+                </div>
+               </fieldset>
+               <fieldset id="guesses" class="guesses">
+                <legend> Output </legend>
+                <textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
+               </fieldset>
+               
+        </form>
+    </body>
+</html>
