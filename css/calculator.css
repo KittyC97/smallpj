@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #eef5a6, #6ff2af);}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px, solid white;
+    outline: none;
+    background-color: rbga(255, 255, 255, 0.75);}
+
+button:hover {
+    background-color: #f2e1c2;}
+
+.btn_ac {
+    grid-column: span 2;
+    color: white;
+    background-color: rgba(252, 83, 5, 0.8);}
+
+.btn_eq {
+    grid-column: span 2;
+    color: white;
+    background-color: rgba(7, 181, 36, 0.8);}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 1rem;}
+
+.output .pre_operand{
+    color: rgba(255,255, 255, 0.75);
+    font-size: 1.5rem;}
+
+.output .cur_operand{
+    color: white;
+    font-size: 2.5rem;}
